@@ -24,6 +24,7 @@ public class Controller {
     private static String[] arrays;
     private static int contador = 0;
     private static String auxPrint;
+    private static boolean aux = false;
 
     @FXML
     private TextArea cadena;
@@ -114,7 +115,6 @@ public class Controller {
 
     void addConditionRules() {
         try {
-            boolean aux = false;
             p = Pattern.compile("[a-zA-z]+(!=|==|<|<=|>|>=)[a-zA-z]+:*");
             m = p.matcher(arrays[contador]);
             if (m.find()) {
