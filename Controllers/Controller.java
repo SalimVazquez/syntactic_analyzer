@@ -67,6 +67,7 @@ public class Controller {
         for (int i = 0; i < pila.size(); i++) {
             pila.pop();
         }
+        aux = false;
     }
 
     @FXML
@@ -84,6 +85,7 @@ public class Controller {
             addPrintRules();
             contador++;
             addRestoRules();
+            aux = false;
             addConditionRules();
             addPrintRules();
             contador++;
